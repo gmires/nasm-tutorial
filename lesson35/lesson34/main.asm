@@ -77,11 +77,6 @@ _write:
         mov     eax, 4 ; SYS_WRITE
         int     80h
 
-_close:
-        mov     ebx, esi
-        mov     eax, 6
-        int     80h
-
 _exit:
         call    quit
 
